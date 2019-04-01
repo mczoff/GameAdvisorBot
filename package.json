@@ -1,0 +1,22 @@
+{
+  "name": "gameadvisorbot",
+  "version": "1.0.0",
+  "description": "Game advisor for the Telegram Messenger",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhorvald/GameAdvisorBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rhorvald/GameAdvisorBot/issues"
+  },
+  "homepage": "https://github.com/rhorvald/GameAdvisorBot#readme",
+  "dependencies": {
+    "telegraf": "^3.28.0"
+  }
+}
