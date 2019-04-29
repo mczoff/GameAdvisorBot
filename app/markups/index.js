@@ -1,16 +1,16 @@
-const Extra = require('telegraf/extra')
+const typegame = require('./typegame'),
+    teamplay = require('./teamplay'),
+    menu = require('./menu'),
+    gameview = require('./gameview'),
+    viewgame = require('./viewgame')
+    gamefindtype = require('./gamefindtype')
+const markups = {
+    Default: menu,
+    TypeGame: typegame,
+    Teamplay: teamplay,
+    Gameview: gameview,
+    GameFindType: gamefindtype,
+    Viewgame: viewgame
+}
 
-const markup = Extra
-    .HTML()
-    .markup((m) => m.inlineKeyboard([
-        m.callbackButton('Add 1', 'add:1'),
-        m.callbackButton('Add 10', 'add:10'),
-        m.callbackButton('Add 100', 'add:100'),
-        m.callbackButton('Subtract 1', 'sub:1'),
-        m.callbackButton('Subtract 10', 'sub:10'),
-        m.callbackButton('Subtract 100', 'sub:100'),
-        m.callbackButton('🐈', Math.random().toString(36).slice(2)),
-        m.callbackButton('Clear', 'clear')
-    ], { columns: 3 }))
-
-module.exports = markup;
+module.exports = markups;

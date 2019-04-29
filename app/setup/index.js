@@ -1,9 +1,11 @@
-const router = require('../routes');
-const markup = require('../markups');
+const router = require('../routes'),
+    markups = require('../markups'),
+    scenes = require('../scenes')
 
-const GameAdvisorBotSetup = {
-    Routes: { Def: router },
-    Markups: { Def: markup }
+const gameAdvisorBotSetup = {
+    Routes: router,
+    Markups: markups,
+    Scenes: scenes
 }
 
-module.exports = GameAdvisorBotSetup;
+module.exports = gameAdvisorBotSetup;
