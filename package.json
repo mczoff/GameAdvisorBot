@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/rhorvald/GameAdvisorBot#readme",
   "dependencies": {
+    "mongoose": "^5.4.22",
     "telegraf": "^3.28.0"
   }
 }
